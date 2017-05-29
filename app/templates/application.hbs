@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<div class="container" style="background-color: {{backgroundColor}}">
+
+  <form>
+    <div class="title">
+      {{title}}
+    </div>
+    <hr />
+    <label>Website title</label>
+    {{input value=title}}
+    <label>Background Color</label>
+      {{color-picker
+      currentColor=backgroundColor
+      on-change=(action (mut backgroundColor))}}
+  </form>
+
+</div>

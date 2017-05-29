@@ -1,0 +1,18 @@
+<div class="Color"
+style="background-color: {{currentColor}}">
+</div>
+
+{{#if isShowingPopup}}
+  {{#modal-dialog
+      tetherTarget='.Color'
+      containerClass="Popup"
+      targetAttachment='middle right'
+      attachment='top left'}}
+
+      {{#each colors as |color|}}
+      <div class="Bar" style="background-color: {{color}};"
+      {{action on-change color}}>
+    </div>
+      {{/each}}
+    {{/modal-dialog}}
+{{/if}}

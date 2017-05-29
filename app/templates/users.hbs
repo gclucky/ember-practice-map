@@ -1,0 +1,117 @@
+<!-- {{#each users as |user|}}
+  <label>firstName</label>
+  {{input value=user.firstName}}
+  <label>lastName</label>
+  {{input value=user.lastName}}<br />
+
+  <label>Contribution</label>
+  {{input value=user.contribution}}
+  <label>income</label>
+  {{input value=user.income}}<br />
+  <label>Contribution Percentage</label>
+  {{input value=user.contributionPercentage}}
+
+
+<h4>{{user.firstName}} has {{user.contributionPercentage}}%</h4>
+  <h1>{{user.fullName}}</h1>
+  <h3>{{user.occupation}}</h3>
+{{/each}}
+<h2>Max User Income {{maxUserIncome}}</h2>
+<h2>Min User Income {{minUserIncome}}</h2>
+  <h1>userinomce {{sumThem}}</h1> -->
+<!-- <hr /> -->
+<!-- {{#each intersectNames as |employee|}}
+  <h1>{{employee}}</h1>
+{{/each}} -->
+<!--
+{{#each users as |name|}}
+   <h1>{{name.firstName}}</h1>
+   {{#if name.contributionGreaterSeven}}
+   <h3> user has contribution greater than 7%</h3>
+ {{/if}} -->
+<!-- {{/each}}  -->
+
+<button class="button" {{action 'setTheThing'}}>add thing</button>
+<h1>The thing is: {{fooBar.property}} </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- COMPUTED PROPERTIES PRACTICE -->
+
+
+<!-- {{#each users as |user|}}
+  <h1>{{user.fullName}}</h1>
+  <h3>{{user.occupation}}</h3>
+  <label>Contribution Percent</label>
+  {{input value=user.contributionPercentage}} <br />
+  {{user.firstName}} has contribution percentage of {{user.contributionPercentage}}% <br />
+ {{#if user.contributeOverSeven}}
+    {{user.firstName }} contributed over 7%
+ {{/if}}
+{{/each}}
+<hr /> -->
+<!-- <h1>Employees</h1>
+{{#each allPeople as |employee|}}
+  <h1>{{employee.fullName}}</h1>
+  <h3>{{employee.occupation}}</h3>
+{{/each}} -->
+<!--
+{{#each allUniqueNames as |name|}}
+  <h1>{{name}}</h1>
+{{/each}}
+{{maxUserIncome}}
+ -->
+
+<!-- {{input value=user.firstName}}
+{{input value=user.lastName}} <br />
+<label>Income</label>
+{{input value=user.income}} <br />
+<label>Contribution</label>
+{{input value=user.contribution}} <br />
+<label>Contribution Percent</label>
+{{input value=user.contributionPercentage}} <br />
+{{user.firstName}} has contribution percentage of {{user.contributionPercentage}}% <br /> -->
+
+<!-- COMPONENT PRACTICE -->
+<!--
+{{#user-filter users=users as |people|}}
+  {{#each people as |person|}}
+    <h1>{{person.fullName}}</h1>
+    <h3>{{person.occupation}}</h3>
+  {{/each}}
+{{/user-filter}} -->
